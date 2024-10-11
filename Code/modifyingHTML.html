@@ -1,0 +1,29 @@
+
+<html lang="en">
+    <head>
+        <title>getElementById example</title>
+    </head>
+    <body>
+        <h1 id="title">I am a title!</h1>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <!-- Runs change() on click -->
+        <button onclick="change();">Change!</button>
+        <script>
+            function change() {
+                const titleElement = document.getElementById("title");
+                // Changes the title to 'About Me'
+                titleElement.innerHTML = "About Me";
+                const paragraphs = document.getElementsByTagName("p");
+                // Changes paragraph 2's font color to red
+                const p2 = paragraphs[1];
+                p2.style.color = "red";
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
